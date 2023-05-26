@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png">
+  
     <title>Pokedex</title>
+
+    <style>
+      body {
+        background: linear-gradient(to bottom, #6ab7f5, #fff);
+        min-height: 100vh;
+      } 
+    </style>
+
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -49,7 +58,7 @@
     </div>
   </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 </html>

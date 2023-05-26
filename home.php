@@ -1,7 +1,6 @@
 <?php
     session_start();
     include_once('config.php');
-    // print_r($_SESSION);
     if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
     {
         unset($_SESSION['email']);
@@ -21,18 +20,18 @@
     $result =$conn->query($sql);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-      <link rel="icon" href="./favicons/favicon-16x16.png">
-      <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.css">
 
   <!-- Main JS -->
-    <script defer src="./js/script.js"></script>
+  <script defer src="./js/script.js"></script>
 
   <title>Pokédex</title>
 </head>
@@ -60,14 +59,14 @@
       <input
         type="search"
         class="input__search"
-        placeholder="Name or Number"
+        placeholder="Nome ou Numero do Pokemon"
         required
       />
     </form>
 
     <div class="buttons">
-      <button class="button btn-prev">Prev &lt;</button>
-      <button class="button btn-next">Next &gt;</button>
+      <button class="button btn-prev">Anterior &lt;</button>
+      <button class="button btn-next">Próximo &gt;</button>
     </div>
 
     <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
